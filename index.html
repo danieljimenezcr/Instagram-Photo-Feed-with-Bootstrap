@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0cc0cccb5f.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <title>Instagram</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+        <div class="container">
+            <a href="" class=" text-decoration-none text-muted"><i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+            <div class="d-flex">
+                <button type="button" class="btn btn-success me-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create New Post
+                </button>
+                <div class="me-3 dropdown dropdown-menu-end dropdown-menu{-sm|-md|-lg|-xl|-xxl}-start">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-sharp fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Caption:</label>
+                        <textarea placeholder="Add the caption of your post here" class="form-control"
+                            id="message-text"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                        <button class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL END -->
+
+    <!-- PAGES BUTTON -->
+    <div class="nav-scroller bg-white box-shadow">
+        <nav class="nav justify-content-center">
+            <a class="nav-item nav-link active" id="grid-tab" data-toggle="tab" href="#grid" role="tab"
+                aria-controls="grid" aria-selected="true">
+                <button class="btn btn-outline-secondary border-0" aria-pressed="true">
+                    <i class="fa fa-th"></i>
+                </button>
+            </a>
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                aria-selected="false">
+                <button class="btn btn-outline-secondary border-0" aria-pressed="true">
+                    <i class="fa fa-square"></i>
+                </button>
+            </a>
+        </nav>
+    </div>
+    <!-- END PAGES BUTTONS -->
+    <!-- START GRID 1st Page -->
+
+    <div class='container card-group'>
+        <div class="row tab-pane container" id="grid">
+            <div class="p-2 col-4"><img class="card-img-top"
+                    src="https://images.unsplash.com/photo-1669025466409-450f22c7561a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt=""></div>
+            <div class="p-2 col-4"><img class="card-img-top"
+                    src="https://images.unsplash.com/photo-1669286081720-49743b35e882?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                    alt=""></div>
+            <div class="p-2 col-4"><img class="card-img-top"
+                    src="https://images.unsplash.com/photo-1661961110372-8a7682543120?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt=""></div>
+            <div class="p-2 col-4"><img class="card-img-top"
+                    src="https://images.unsplash.com/photo-1669025466409-450f22c7561a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt=""></div>
+            <div class="p-2 col-4"><img class="card-img-top"
+                    src="https://images.unsplash.com/photo-1669286081720-49743b35e882?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                    alt=""></div>
+            <div class="p-2 col-4"><img class="card-img-top"
+                    src="https://images.unsplash.com/photo-1661961110372-8a7682543120?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt=""></div>
+            <div class="p-2 col-4"><img class="card-img-top"
+                    src="https://images.unsplash.com/photo-1669025466409-450f22c7561a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt=""></div>
+            <div class="p-2 col-4"><img class="card-img-top"
+                    src="https://images.unsplash.com/photo-1669286081720-49743b35e882?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                    alt=""></div>
+            <div class="p-2 col-4"><img class="card-img-top"
+                    src="https://images.unsplash.com/photo-1661961110372-8a7682543120?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt=""></div>
+        </div>
+    </div>
+    <!-- END GRID 1st Page -->
+    <!-- INICIO POST-->
+
+    <div class="tab-pane" id="profile">
+         <div class="row justify-content-center mb-4">
+            <div class="card p-0 rounded-0" style="width: 28rem;">
+                <div class="d-flex justify-content-between">
+                    <h4 class="m-2" >First Photo</h4>
+                    <p class="m-2 text-black-50" >12/24</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1661961110372-8a7682543120?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6>203 Likes</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+        </div>
+        <div class="row justify-content-center mb-4">
+            <div class="card p-0 rounded-0" style="width: 28rem;">
+                <div class="d-flex justify-content-between">
+                    <h4 class="m-2" >Another Photo</h4>
+                    <p class="m-2 text-black-50" >12/24</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1669025466409-450f22c7561a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6>150 Likes</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+        </div>
+        <div class="row justify-content-center mb-4">
+            <div class="card p-0 rounded-0" style="width: 28rem;">
+                <div class="d-flex justify-content-between">
+                    <h4 class="m-2" >Premium Photo</h4>
+                    <p class="m-2 text-black-50" >12/24</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1669286081720-49743b35e882?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6>278 Likes</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- FIN POST  -->
+
+            <!-- JavaScript Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+            <script src="./script.js"></script>
+</body>
+
+</html>
